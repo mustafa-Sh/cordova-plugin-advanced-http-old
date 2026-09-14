@@ -83,6 +83,7 @@ class CordovaServerTrust implements Runnable {
 
   @Override
   public void run() {
+    try {
       /*if ("legacy".equals(this.mode)) {
         this.tlsConfiguration.setHostnameVerifier(null);
         this.tlsConfiguration.setTrustManagers(null);
